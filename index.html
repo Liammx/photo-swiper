@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Title</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1 class="title">Website Title</h1>
+        </div>
+        <div class="search-container">
+            <input class="search" type="text" class="search-bar" placeholder="Search...">
+            <div class="icons">
+                <box-icon class="box-icon" name='search'></box-icon>
+                <box-icon class="box-icon" name='shopping-bag' ></box-icon>
+                <box-icon class="box-icon" name='menu' ></box-icon>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://content.italic.com/13d35c48-82dd-4686-8abb-003b9b297fe0.jpeg?ixlib=react-9.8.0&q=80&w=1600&auto=format&fit=max" alt="Photo 1"></div>
+                <div class="swiper-slide"><img src="https://content.italic.com/6a8daf6b-2648-4351-95e1-b4e8542a98bf.jpeg?ixlib=react-9.8.0&q=80&w=1600&auto=format&fit=max" alt="Photo 2"></div>
+                <div class="swiper-slide"><img src="https://content.italic.com/3835a7a7-9e75-4100-8105-9fb4ad809186.jpeg?ixlib=react-9.8.0&q=80&w=1600&auto=format&fit=max" alt="Photo 3"></div>
+                <div class="swiper-slide"><img src="https://content.italic.com/fd26e149-3a5a-4924-ba01-a91f6dd47e7b.jpeg?ixlib=react-9.8.0&q=80&w=1600&auto=format&fit=max" alt="Photo 4"></div>
+            </div>
+            <div class="swiper-button-prev">&lt;</div>
+            <div class="swiper-button-next">&gt;</div>
+        </div>
+
+        <div class="order-section">
+            <h2>Order Now</h2>
+            <div class="order-item"></div>
+            <div class="order-item"></div>
+            <div class="order-item"></div>
+            <div class="order-item"></div>
+        </div>
+    </main>
+
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Registration</h2>
+            <form id="registration-form">
+                <input type="text" id="name" name="name" placeholder="First Name" required>
+                <input type="text" id="surname" name="surname" placeholder="Last Name" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                <button type="submit">Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

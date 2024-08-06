@@ -1,0 +1,54 @@
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .icons {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .order-section {
+        width: 100%;
+    }
+}
